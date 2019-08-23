@@ -10,7 +10,7 @@ export class QuoteComponent implements OnInit {
  quotes:Quote[] =[
       {id:1,name:'Doing the best at this moment puts you in the best place for the next moment.',author:'Oprah Winfrey'},
       {id:2,name:'You must be the change you wish to see in the world.',author:'Gandhi'},
-      {id:3,name:'Be happy for this moment.this moment is your life',author:'OMAR KHYYAM'},
+      {id:3,name:'Be happy for this moment.this moment is your life',author:'omar khyyam'},
     ];
   constructor() { }
 
