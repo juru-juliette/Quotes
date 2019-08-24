@@ -17,6 +17,12 @@ quotes:Quote[] =[
     new Quote(2,'You must be the change you wish to see in the world.','written by Gandhi','juru',new Date(2019,6,9)),
     new Quote(3,'Be happy for this moment.this moment is your life','written by omar khyyam','juru',new Date(2019,6,9)),
 ];
+// addNewQuote(quote){
+//   let quoteLength = this.quotes.length;
+//   quote.id = quoteLength+1;
+//   quote.completeDate = new Date(quote.completeDate)
+//   this.quotes.push(quote)
+// }
 deleteQuote(isComplete, index){
   if (isComplete) {
     let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
