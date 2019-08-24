@@ -2,6 +2,9 @@
 <p>
     {{quote.author}}
   </p>
+
+<p>This quote is published on {{quote.completeDate|dateCount}} days</p>
   
   <button (click)= 'quoteComplete(true)'>UPVOTES</button>
-  <button (click)= 'quoteComplete(true)'>DOWNVOTES</button>
+  <button (click)= 'quoteComplete(true)'>DOWNVOTES</button><br>
+  <button (click)= 'quoteDelete(true)'>Delete Quote</button>

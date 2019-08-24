@@ -2,31 +2,40 @@
 <div class="container-fluid">
     <h2 class="text-center">You can post your quote here</h2>
     <hr>
-    <form>
+    <form #quoteForm='ngForm'>
             <div class="form-group">
   
                     <label for="quote">write your quote here</label>
-                    <textarea class="form-control" id="quote" rows="4" required></textarea>
-          
+                    <textarea class="form-control" id="quote" rows="4" name="quote" required ></textarea>
+                    <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+                        <p>please this is required</p>
+                      </div>
                 </div>
+               
         <div class="form-group">
   
             <label for="author">Author</label>
-            <input type="text" required class="form-control" id="name">
-  
+            <input type="text" class="form-control" id="name" name="author" required >
+            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+                <p>please this is required</p>
+              </div>
         </div>
-        Display {{newquotes.name}}
+        <!-- Display {{newquotes.name}} -->
         <div class="form-group">
   
                 <label for="writter">Writter Name</label>
-                <input type="text" required class="form-control" id="name"  name="name">
-      
+                <input type="text"  class="form-control" id="name"  [(ngModel)]="newquotes.name" name="name" required>
+                <div [hidden]="name.valid || quote.pristine" class="alert alert-danger">
+                    <p>please this is required</p>
+                  </div>
             </div>
         
         <div class="form-group">
-            <label for="complete">Posted Date</label>
-            <input type='date' id="complete" required>
-  
+            <label for="date">Posted Date</label>
+            <input type='date' id="complete" name="date" required>
+            <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
+                <p>please this is required</p>
+              </div>
         </div>
         <button type="submit" class="btn btn-success">Send</button>
     </form>
