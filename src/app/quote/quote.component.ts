@@ -13,9 +13,9 @@ export class QuoteComponent implements OnInit {
 //       {id:3,name:'Be happy for this moment.this moment is your life',author:'written by omar khyyam'},
 //     ];
 quotes:Quote[] =[
-    new Quote (1,'Doing the best at this moment puts you in the best place for the next moment.','written by Oprah Winfrey'),
-    new Quote(2,'You must be the change you wish to see in the world.','written by Gandhi'),
-    new Quote(3,'Be happy for this moment.this moment is your life','written by omar khyyam'),
+    new Quote (1,'Doing the best at this moment puts you in the best place for the next moment.','written by Oprah Winfrey',new Date(2019,6,9)),
+    new Quote(2,'You must be the change you wish to see in the world.','written by Gandhi',new Date(2019,6,9)),
+    new Quote(3,'Be happy for this moment.this moment is your life','written by omar khyyam',new Date(2019,6,9)),
 ];
 
 toggleDetails(index){

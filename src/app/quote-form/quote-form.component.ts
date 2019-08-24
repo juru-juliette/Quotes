@@ -7,7 +7,7 @@ import { Quote } from '../quote';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
-  newquotes = new Quote(0,"","",new Date());
+  // newquotes = new Quote(0,"","");
   constructor() { }
 
   ngOnInit() {
