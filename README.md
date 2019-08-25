@@ -1,6 +1,27 @@
-# Quotes
+## Quotes
+This is a Quotes project where a user is able to add and delete quote with their details and able to see number of upvotes and downvotes.
+## Author
+Juru juliette
+## Mechanics used
+* Angular
+* Type Script
+* HTML
+* CSS
+* Bootstrap
+* sudo apps
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+## How to accsess it:
+* u first have to have internet connection
+* then open your web browser
+* and type this website: https://juru-juliette.github.io/Quotes/
+
+## Contacts
+
+* Tel: +250787873242
+* Email: kangabejuliette@gmail.com
+## License
+
+This project is under MIT License. Copyright (c) 2019 Kangabe Juliette
 
 ## Development server
 
