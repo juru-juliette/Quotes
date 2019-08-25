@@ -6,7 +6,7 @@
 
         <div *ngFor='let quote of quotes,let i =index'>
           <div>
-            <li id="{{i}}">{{quote.name}} due on {{quote.completeDate|date}}</li>
+            <li id="{{i}}"appStrikethrough>{{quote.name}} due on {{quote.completeDate|date}}</li>
             <button (click)='toggleDetails(i)'>Author</button>
           </div>
           <div *ngIf='quote.showDetails'>
