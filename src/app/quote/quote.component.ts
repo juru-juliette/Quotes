@@ -12,10 +12,10 @@ export class QuoteComponent implements OnInit {
 //       {id:2,name:'You must be the change you wish to see in the world.',author:'written by Gandhi'},
 //       {id:3,name:'Be happy for this moment.this moment is your life',author:'written by omar khyyam'},
 //     ];
-quotes:Quote[] =[
-    new Quote (1,'Doing the best at this moment puts you in the best place for the next moment.','written by Oprah Winfrey','juru',new Date(2019,6,9)),
-    new Quote(2,'You must be the change you wish to see in the world.','written by Gandhi','juru',new Date(2019,6,9)),
-    new Quote(3,'Be happy for this moment.this moment is your life','written by omar khyyam','juru',new Date(2019,6,9)),
+quotes=[
+    new Quote (1,'"Doing the best at this moment puts you in the best place for the next moment."','Oprah Winfrey','written by juru',new Date(2019,6,9)),
+    new Quote(2,'"You must be the change you wish to see in the world.','Gandhi"','written by juru',new Date(2019,6,9)),
+    new Quote(3,'"Never regret anything that made you smile."','omar khyyam','written by juru',new Date(2019,6,9)),
 ];
 
 toggleDetails(index){
