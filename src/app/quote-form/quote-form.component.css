@@ -1,0 +1,19 @@
+/* #quoteForm{
+    text-align: center;
+    float:right;
+} */
+h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    font-family: 'pacifico';
+    color: #6b8801;
+  }
+  .form-group{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: black;
+  }
+  #ngform{
+      text-align: center;
+  }

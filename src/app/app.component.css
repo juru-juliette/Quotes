@@ -1,0 +1,25 @@
+.jumbtron{
+    background-color: darkslategray;
+    }
+    .card{
+        background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url("http://quotesideas.com/wp-content/uploads/2015/10/Albert_Einstein_Famous_Quote_on_Success_and_Value_HD_Wallpaper.jpg");
+        height: 750px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        color: white;
+        padding-top: 200px;
+    }
+    h2{
+        text-align: center;
+        font-size: 30px;
+        margin-top: 50px;
+        font-family: 'pacifico';
+        color: #6b8801;
+      }
+    .footer{
+        text-align: center;
+        color:black;
+        margin-top: 50px;
+        background-color: darkslategray;
+    }
