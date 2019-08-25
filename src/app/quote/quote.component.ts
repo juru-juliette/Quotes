@@ -21,14 +21,25 @@ quotes:Quote[] =[
 toggleDetails(index){
   this.quotes[index].showDetails = !this.quotes[index].showDetails;
 }
-deleteQuote(isComplete, index){
-  if (isComplete) {
-    let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
+// deleteQuote(isComplete, index){
+//   if (isComplete) {
+//     let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
 
-    if (toDelete){
-      this.quotes.splice(index,1)
+//     if (toDelete){
+//       this.quotes.splice(index,1)
+//     }
+//   }
+// }
+//
+deleteQuote(isComplete, index) {
+  if (isComplete) {
+    let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}`)
+
+    if (toDelete) {
+      this.quotes.splice(index, 1)
     }
   }
+
 }
 
 addNewQuote(quote){

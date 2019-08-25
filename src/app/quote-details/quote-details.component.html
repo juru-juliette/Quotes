@@ -1,10 +1,16 @@
 <!-- <p>quote-details works!</p> -->
-<p>
+<div class="juru">
+  <p>
     {{quote.author}}
   </p>
+  <p>
+    {{quote.writter}}
+  </p>
 
-<p>This quote is published on {{quote.completeDate|dateCount}} days</p>
-  
-  <button (click)= 'quoteComplete(true)'>UPVOTES</button>
-  <button (click)= 'quoteComplete(true)'>DOWNVOTES</button><br>
-  <button (click)= 'quoteDelete(true)'>Delete Quote</button>
+  <p>This quote is published on {{quote.completeDate|dateCount}} days</p>
+  <p>{{upvote}}</p>
+  <p>{{downvote}}</p>
+  <button class="deleteq" (click)='quoteDelete(true)'> Delete quote </button>
+  <button id="two" (click)='like($event)'>Upvote</button>
+  <button id="three" (click)='dislike($event)'>Downvote</button>
+</div>
